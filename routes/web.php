@@ -13,4 +13,4 @@
 
 Route::get('/cars',['as' => 'all-posts', 'uses' =>'CarsController@index']);
 
-//Route::get('/cars/{id}', ['as' => 'all-cars', 'uses'=>'CarsControler@show']);
+Route::get('/cars/{id}', ['as' => 'all-cars', 'uses'=>'CarsController@show']);

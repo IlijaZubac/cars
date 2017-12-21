@@ -11,12 +11,12 @@ class CarsController extends Controller
         $cars = Car::all();
         return view('cars',compact(['cars']));
     }
-/*    public function show($id)
+    public function show($id)
     {
-        $post = Post::find($id);
-        return view('post.show', compact(['post']));
+        $cars = Car::find($id);
+        return view('show', compact(['cars']));
     }
-    */
+    
 }
  
 

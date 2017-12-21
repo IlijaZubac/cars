@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('cars', function () {
-    return view('welcome', ['name' => 'Ilija', 'age' => 48]);
-});
-Route::get('about', function () {
-    return view('about');
-});
+Route::get('/cars',['as' => 'all-posts', 'uses' =>'CarsController@index']);
+
+//Route::get('/cars/{id}', ['as' => 'all-cars', 'uses'=>'CarsControler@show']);

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use\App\Car;
 use Illuminate\Http\Request;
 
 class CarsController extends Controller
@@ -9,7 +9,7 @@ class CarsController extends Controller
     public function index()
     {
         $cars = Car::all();
-        return view('car.index',compact(['cars']));
+        return view('cars',compact(['cars']));
     }
 /*    public function show($id)
     {
